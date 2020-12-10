@@ -2,24 +2,22 @@
   "name": "next-graphql",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Leigh Halliday",
+  "author": "Said A.",
   "license": "MIT",
   "scripts": {
-    "dev": "next --port 3001",
+    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "now-build": "next build && yarn db:migrate",
-    "db:migrate": "knex migrate:latest",
-    "db:rollback": "knex migrate:rollback"
+    "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.4",
     "apollo-server-micro": "^2.9.16",
-    "dataloader": "^2.0.0",
-    "knex": "^0.20.8",
+    "deepmerge": "^4.2.2",
+    "isomorphic-unfetch": "^3.1.0",
+    "lodash": "^4.17.20",
     "micro-cors": "^0.1.1",
-    "next": "^9.2.1",
-    "pg": "^7.17.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "next": "latest",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
